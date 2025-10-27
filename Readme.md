@@ -73,6 +73,44 @@ This Python project reads a list of email addresses from a CSV file, groups reci
 ## 🧩 Installation
 
 1. **Clone the repository:**
-   ```bash
+```bash
    git clone https://github.com/yourusername/email-group-sender.git
    cd email-group-sender
+```
+
+
+2. **Create a virtual environment (recommended):**
+```bash
+   python -m venv venv
+   source venv/bin/activate      # On macOS/Linux
+   venv\Scripts\activate         # On Windows
+```
+
+3. **Install dependencies:**
+
+```bash
+  pip install -r requirements.txt
+```
+
+
+
+
+
+## Execute
+
+1. Update the recipients list in the recipients.csv file. Add a list of the recipients you want to send in the following 
+   format.
+
+```csv
+
+NAME,EMAIL
+company1,firstname.lastname@gmail.com
+company2,firstname.lastname@gmail.com
+
+```
+
+2. Execute the Python code :
+
+```bash
+  python emailing.py
+```
